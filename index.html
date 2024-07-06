@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-attachment: fixed;
+            background-color: black;
+        }
+        h4{
+            color: white;
+        }
+        body> div{
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            width: 200px;
+            ;
+            position: relative;
+        }
+        .green{
+            background-color: rgb(3, 80, 3);
+            height: 100px;
+            width:  140px;
+            left: 30%;
+            position: absolute;
+        }
+        .moon{
+            background-color: rgb(255, 255, 255);
+            height: 75px;
+            width:  75px;
+            border-radius: 50%;
+            top: 10%;
+            left: 20%;
+            position: relative;
+        }
+        .mg{
+            background-color: rgb(3, 80, 3);
+            height: 75px;
+            width:  75px;
+            border-radius: 50%;
+            position: relative;
+            left: 12%;
+            bottom: 12%;
+        }
+        .five-pointed-star {
+            --star-color:rgb(255, 255, 255);
+            
+            top: 1.95rem;
+            left: 1.4em;          
+            font-size:1em;
+            position: relative;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-right: 1em solid transparent;
+            border-bottom: 0.7em solid var(--star-color);
+            border-left: 1em solid transparent;
+            transform: rotate(35deg);
+        }
+        .five-pointed-star:before {
+            border-bottom: 0.8em solid var(--star-color);
+            border-left: 0.3em solid transparent;
+            border-right: 0.3em solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -0.45em;
+            left: -0.65em;
+            display: block;
+            content:"";
+            transform: rotate(-35deg);
+        }
+        .five-pointed-star:after {
+            position: absolute;
+            display: block;
+            top: 0.03em;
+            left: -1.05em;
+            width: 0;
+            height: 0;
+            border-right: 1em solid transparent;
+            border-bottom: 0.7em solid var(--star-color);
+            border-left: 1em solid transparent;
+            transform: rotate(-70deg);
+            content:"";
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div >
+        <div class="green">
+            <div class="moon">
+                <div class="mg">
+                    <div class="five-pointed-star"></div>
+                        <div></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 >
+        Pakistan flag created By:Aasim using css
+    </h4>
+</body>
+</html>
